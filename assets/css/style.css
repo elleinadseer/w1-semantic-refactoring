@@ -1,3 +1,4 @@
+/*hello*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -73,6 +74,24 @@ p {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
+    margin-bottom: 20px;
+} /*
+If I try to add these aspects from the repeated tags below it doesn't work
+
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+} */
+
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.content img {
+    max-height: 200px;
 }
 
 .benefits {
@@ -85,50 +104,17 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
-.benefit-lead {
+/*
     margin-bottom: 32px;
     color: #ffffff;
-}
+*/
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefits h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
+.benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
@@ -161,6 +147,18 @@ p {
     color: #ffffff;
 }
 
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h4 {
+    font-size: 20px;
+}
+
+/*
 .search-engine-optimization img {
     max-height: 200px;
 }
@@ -186,15 +184,60 @@ p {
 .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
+} */
+
+ /*
+ Are the classes below now useless in the HTML file? Test removing them.
+
+ Removed all the sections below and combined their purposes into the benefits. sections above */
+
+.benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
 }
 
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+/*
+.benefit-lead h3 {
+    margin-bottom: 10px;
     text-align: center;
 }
 
-.footer h4 {
-    font-size: 20px;
+.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
 }
+
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-lead img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-brand img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px; 
+} 
+END OF BENEFITS SECTION*/
+
+
