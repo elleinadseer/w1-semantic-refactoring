@@ -1,4 +1,5 @@
 /*hello. on new branch css-finalise, need to commit my changes*/
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,7 +9,6 @@
 body {
     background-color: #d9dcd6;
 }
-
 
 /* Do I need to change the names of the two below?
 Having code tied to something as missable as an a href and paragraph tag seems weird*/
@@ -62,12 +62,13 @@ Not sure if this was the right thing to do? Because all links no longer have a u
 
 /* P was originally here */
 
-.banner-image {
+.banner {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
+    /* background-image: url("../images/digital-marketing-meeting.jpg"); */
+    object-fit: cover;
+/*    background-size: cover; */
     background-position: center;
 }
 
@@ -153,9 +154,9 @@ If I try to add these aspects from the repeated tags below it doesn't work
     max-width: 150px;
 }
 
-.benefit-lead, 
-.benefit-brand, 
-.benefit-cost {
+.benefit-lead-generation, 
+.benefit-brand-awareness, 
+.benefit-cost-management {
     margin-bottom: 32px;
     color: #ffffff;
 }

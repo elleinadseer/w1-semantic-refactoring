@@ -31,10 +31,13 @@ NTS: Is this worth commenting on?-->
     </section>
 
     <!-- Large top banner photo under nav bar. -->
-    <!-- NTS: Changed name from "hero" to "banner-image".
-    Would this be regarded as decoration image? Does it need an alt text? How to alt text CSS?
-    After trying, it seems you can't alt text CSS. Don't know how to move image into HTML. Will ask tutor but for now, disregarding.-->
-    <section class="banner-image"></section>
+    <!-- NTS: Changed name from "hero" to "banner" (formerly "banner-image").
+    Moved image from CSS to HTML so I could add ALT (suggested by Jack Stockwell on Slack)
+    Changed from section to img via Jack -->
+    <img class="banner"
+        src="./assets/images/digital-marketing-meeting.jpg"
+        alt="Professionals working together on the same table with a whiteboard in the background.">
+    </img>
 
     <!-- Content section. -->
     <section class="content">
@@ -85,10 +88,8 @@ NTS: Is this worth commenting on?-->
         <!-- Lead generation section.-->
         <!-- NTS: Is benefit lead a bad name for this class? Not clear enough? 
         Doesn't match the naming conventions used in the Search engine section.-->
-
-        <!--
-            Removing the benefit-lead section made the text black and removed space gap at the bottom.-->
-            <section class="benefit-lead">
+        <!-- Removing the benefit-lead section made the text black and removed space gap at the bottom.-->
+            <section class="benefit-lead-generation">
             <h3>Lead Generation</h3>
             <img src="./assets/images/lead-generation.png"
             alt="A gear funneling into a money symbol." />
@@ -99,7 +100,7 @@ NTS: Is this worth commenting on?-->
         </section>
 
         <!-- Brand awareness section. -->
-        <section class="benefit-brand">
+        <section class="benefit-brand-awareness">
             <h3>Brand Awareness</h3>
             <img src="./assets/images/brand-awareness.png" 
             alt="Man with a light buld head."/>
@@ -110,7 +111,7 @@ NTS: Is this worth commenting on?-->
         </section>
 
         <!-- Cost management section. -->
-        <section class="benefit-cost">
+        <section class="benefit-cost-management">
             <h3>Cost Management</h3>
             <img src="./assets/images/cost-management.png" 
             alt="A gear with coins beneath it."/>
