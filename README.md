@@ -2,178 +2,39 @@
 
 ## Description
 
-"Refactoring code to improve the semantic structure of HTML elements."
-"Contains quality README file with description, screenshot, and link to deployed application."
+I have been tasked to increase the efficiency of the CSS by consolidating the selectors and properties, organising them to follow the semantic structure of the HTML elements and to include comments before each element or section of the page. Additionally, the user story also asked to create a codebase that follows accessibility standards so that the site is optimised for search engines. 
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+I feel that I have fulfilled these tasks to the best of my ability, as I've consolidated repetitive type selectors into grouping selectors and made code more semantically efficient in other ways. (Please refer to the refactoring section below.) I have also included comments throughout.
+I feel that I have solved the problem of the website's non-optimised accessibility and search engine engagement by adding alt text to every image and giving the website a more appropriate title.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+## Refactoring
+Lessons learned about refactoring code based on the completion of this project:
+- How to fix broken anchor links by attaching an Id to a section. 
+- How to fix repeating code by combining repetitive type selectors into a grouping selector.
+- How to convert images defined into CSS into HTML code. Doing this allowed me to add an alt text to this image.
+- How to simplify a section class into an img class. (Please refers to credits as to how I learned about this.)
+- The importance of ordering headings sequentially. 
+
+I also learned to make classes more semantically convenient. Examples:
+- Re-naming classes for better clarity (i.e. renaming the banner image from "hero" to "banner" and "benefit-lead" to "lead-generation" to create a more consistent naming scheme through out the entire code.)
+- Changing a type selector into a descendent selector in order to make the purpose of the selector more semantically clear.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+As I can demonstrate in the screenshots below, despite a large portion of the code being changed the website still looks exactly the same as before. I have managed to improve the website's code functionality and accessibility without impacting on the visual design. 
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+![Screenshot](https://user-images.githubusercontent.com/126515415/229325816-11add1e0-bce8-43d2-8ca8-fcb6582cd37d.png)
+![Screenshot2](https://user-images.githubusercontent.com/126515415/229325825-50578477-656b-453b-8a11-370192e2dda0.png)
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+The links in the navigational bar successfully anchor link to the described sections of the page. 
+The rest of the website is not interactive but all aspects of the website are displayed correctly. 
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+I would like to thank my class mate Jack Stockwell who advised me through Slack how to move the banner image code from CSS into HTML so I could create alt text for that image. I also changed the banner from a section class to an img class based on his advice.
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+Other than that I heavily relied only lessons taught through the pre-module guide and the module 1 lessons of the course. I also did some minor googling to receive information that I did not use heavily enough to require attribution. 
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
-Changes:
-
-NTS: Changed name from "hero" to "banner" (formerly "banner-image").
-    Moved image from CSS to HTML so I could add ALT (suggested by Jack Stockwell on Slack)
-    Changed from section to img via Jack
-
-Search engine section. 
-        FIXED: This section formerly did not hold an ID.
-        This caused a link break that prevented jumping to this section when text clicked in nav bar.
-        Including ID fixed this issue.
-
-    Lead generation section
-   NTS: Is benefit lead a bad name for this class? Not clear enough? 
-   Doesn't match the naming conventions used in the Search engine section
-   Removing the benefit-lead section made the text black and removed space gap at the bottom.
-
-   Changed previous H2 to H4 to order the headings sequentially.
-    Looks the same as before
-
-    /* .benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-} */
-
- /*
- Removed all the sections below and combined their purposes into the benefits. sections above */
-/*
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px; 
-} 
-END OF BENEFITS SECTION*/
-/*
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-} */
-
-/*    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    background-color: #0072bb;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    background-color: #0072bb;
-}*/
-
--
-
-If I try to add these aspects from the repeated tags below it doesn't work
-    margin-bottom: 20px; ????? sort repeated code
-    padding: 50px;
-    height: 300px;
-    background-color: #0072bb;
-
--
-
-/* Do I need to change the names of the two below?
-Having code tied to something as missable as an a href and paragraph tag seems weird*/
-
-/* Makes paragraphs font size 16px.*/
-
--
-
-/* A makes the nav links white.
-CHANGED: originally this was just named 'A' and it was unclear where in the code this purpose was functioning. Made it more specific. 
-Not sure if this was the right thing to do? Because all links no longer have a uniform style accross the website.*/
-
--
-
-/* P was originally here */
-.banner
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    /* background-image: url("../images/digital-marketing-meeting.jpg"); */
-    object-fit: cover;
-/*    background-size: cover; */
-
+MIT license was used for this repository. 
