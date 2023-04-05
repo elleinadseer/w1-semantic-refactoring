@@ -7,6 +7,14 @@ I have been tasked to increase the efficiency of the CSS by consolidating the se
 I feel that I have fulfilled these tasks to the best of my ability, as I've consolidated repetitive type selectors into grouping selectors and made code more semantically efficient in other ways. (Please refer to the refactoring section below.) I have also included comments throughout.
 I feel that I have solved the problem of the website's non-optimised accessibility and search engine engagement by adding alt text to every image and giving the website a more appropriate title.
 
+## Links
+
+Link to deployed website:
+https://elleinadseer.github.io/w1-semantic-refactoring/
+
+Link to GitHub repo: 
+https://github.com/elleinadseer/w1-semantic-refactoring
+
 ## Refactoring
 Lessons learned about refactoring code based on the completion of this project:
 - How to fix broken anchor links by attaching an Id to a section. 
