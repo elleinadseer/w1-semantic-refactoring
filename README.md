@@ -10,13 +10,13 @@ I feel that I have solved the problem of the website's non-optimised accessibili
 ## Refactoring
 Lessons learned about refactoring code based on the completion of this project:
 - How to fix broken anchor links by attaching an Id to a section. 
-- How to fix repeating code by combining repetitive type selectors into a grouping selector.
+- How to fix repeating code by combining repetitive type selectors into grouping selectors.
 - How to convert images defined into CSS into HTML code. Doing this allowed me to add an alt text to this image.
-- How to simplify a section class into an img class. (Please refers to credits as to how I learned about this.)
+- How to simplify a section class into an img class.
 - The importance of ordering headings sequentially. 
 
 I also learned to make classes more semantically convenient. Examples:
-- Re-naming classes for better clarity (i.e. renaming the banner image from "hero" to "banner" and "benefit-lead" to "lead-generation" to create a more consistent naming scheme through out the entire code.)
+- Re-naming classes for better clarity (i.e. "benefit-lead" to "lead-generation" to create a more consistent naming scheme through out the entire code.)
 - Changing a type selector into a descendent selector in order to make the purpose of the selector more semantically clear.
 
 ## Usage
