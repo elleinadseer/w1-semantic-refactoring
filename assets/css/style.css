@@ -37,7 +37,7 @@ p {
     font-size: 20px;
 }
 
-/* Changed this selector from 'a' to '.head nav a' to makes it's purpose clearer.*/
+/* Changed this selector from 'a' to '.header nav a' to makes it's purpose clearer.*/
 .header nav a {
     color: #ffffff;
     text-decoration: none;
