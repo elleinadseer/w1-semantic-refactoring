@@ -28,6 +28,7 @@ p {
     color: #d9dcd6;
 }
 
+
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -36,6 +37,7 @@ p {
     font-size: 20px;
 }
 
+/* Changed this selector from 'a' to '.head nav a' to makes it's purpose clearer.*/
 .header nav a {
     color: #ffffff;
     text-decoration: none;
@@ -50,7 +52,8 @@ p {
     margin-left: 25px;
 }
 
-.banner {
+/* Removed img src from CSS and moved into HTML so I could add ALT text */
+.hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -68,6 +71,7 @@ p {
     margin-left: 25px;
 }
 
+/* Included font-family and color in this section to simplify code*/
 .content {
     width: 75%;
     display: inline-block;
@@ -76,15 +80,20 @@ p {
     color: #ffffff;
 } 
 
+/* Placed selectors refering to children of content under the content selector for better cohesion.*/
+
+/* There were 3 individual selectors for each content category, now there's only one child selector. */
 .content h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/* There were 3 individual selectors for each content category, now there's only one child selector. */
 .content img {
     max-height: 200px;
 }
 
+/* Originally these were repeating indivual selectors, I combined them into grouping selectors. Also changed their name for better naming scheme cohesion. */
 .search-engine-optimization, 
 .online-reputation-management, 
 .social-media-marketing {
@@ -105,17 +114,20 @@ p {
     background-color: #2589bd;
 }
 
+/* There were 3 individual selectors for each content category, now there's only one child selector. */
 .benefits h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/* There were 3 individual selectors for each content category, now there's only one child selector. */
 .benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+/* Originally these were repeating indivual selectors, I combined them into grouping selectors. Also changed their name for better naming scheme cohesion. */
 .lead-generation, 
 .brand-awareness, 
 .cost-management {
@@ -130,6 +142,7 @@ p {
     text-align: center;
 }
 
+/* Changed from h3 to h4 to make headings sequential. */
 .footer h4 {
     font-size: 20px;
 }
